@@ -28,3 +28,7 @@ The game is finished showing a toplist once all the available small rectangles a
 
 ![image](https://github.com/user-attachments/assets/e49fe511-e541-4f1e-9302-82c8bc126ecd)
 
+
+# Built with
+- IDE: Visual Studio Code + Live Server (5.7.9) (Do not forger to click the "Go Live".)
+- Operating system: Microsoft Windows 10 (10.0.19045)
