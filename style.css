@@ -1,0 +1,284 @@
+body {
+    text-align: center;
+    background-color: rgb(248, 250, 240);
+    font-family: sans-serif;
+}
+
+#mainMenu {
+    width: 40%;
+    margin: 0 auto;
+
+}
+
+#playerName {
+    width: 94%;
+    font-size: 100%;
+    font-weight: bold;
+    border: 3px solid rgb(219, 196, 142);
+    border-radius: 5px;
+    padding: 15px 15px;
+    margin-bottom: 10px;
+
+}
+
+#diffBox  {
+    width: 70%;
+    border: 3px solid rgb(191, 200, 177);
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    font-size: 100%;
+    font-weight: bold;
+    color: rgb(191, 200, 177);
+
+    
+}
+
+#mapSizes {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+#mainMenuLevel2 {
+    display: flex;
+    justify-content: center;
+}
+
+#diffFive, #diffSeven {
+    text-align: center;
+}
+
+#fiveBut, #sevenBut {
+    text-align: center;
+    width: 100%
+}
+
+#mapSizes > div > button {
+    width: 150px;
+    font-size: 100%;
+    height: 60px;
+    font-weight: bold;
+    color: rgb(78, 79, 103);
+    background-color: rgb(234, 239, 211);
+    border: 3px solid rgb(191, 200, 177);
+    border-radius: 10px;
+}
+
+#mapSizes > div > label {
+    display: block;
+    margin-top: 15px;
+}
+
+#otherButtons {
+    width: 30%;
+    margin-left: 20px;
+}
+
+#otherButtons > button {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 3px solid rgb(191, 200, 177);
+    border-radius: 10px;
+}
+ 
+#descBut {
+    color: rgb(78, 79, 103);
+    background-color: rgb(234, 239, 211);
+    margin-top: 5px;
+}
+
+#startBut:disabled {
+    opacity: 0.5;
+}
+
+#startBut {
+    color: white;
+    background-color: rgb(78, 79, 103);
+    border-bottom: 100px;
+    margin-top: 20px;
+}
+
+h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(219, 196, 142);
+    font-size: 450%;
+    border: 0;
+    width: 100%;
+    margin: 10px;
+    text-shadow: -1px 0 rgb(173, 146, 85), 0 1px rgb(173, 146, 85), 1px 0 rgb(173, 146, 85), 0 -1px rgb(173, 146, 85)
+}
+
+.wrap {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    gap: 0px
+}
+
+#leftside {
+    display: block;
+    border: 1px solid black;
+    width: 40%;
+}
+
+#gameTextsFix {
+    border-top: 100px;
+}
+
+#leftSide > * {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.horizontal_line {
+    width: 100%;
+    height: 5px;
+    border-top: 1px solid rgb(211, 181, 161);
+    line-height: 80%;
+}
+
+.reapinfo, #gameEnd {
+    display: block;
+    border: 5px solid rgb(211, 181, 161);
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.reapinfo > * {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#gameEnd {
+    margin-top: 50px;
+}
+
+h2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(219, 196, 142);
+    font-size: 300%;
+    border: 0;
+    width: 100%;
+    margin: 10px;
+    text-shadow: -1px 0 rgb(173, 146, 85), 0 1px rgb(173, 146, 85), 1px 0 rgb(173, 146, 85), 0 -1px rgb(173, 146, 85)
+}
+
+.gameTextsFix {
+    color: rgb(80, 81, 104);
+    font-size: 150%;
+    font-weight: bold;
+    padding-top: 3px;
+}
+
+.gameTextsChange {
+    color: rgb(40, 35, 58);
+    font-size: 250%;
+    font-weight: bold;
+}
+
+#scores  table td {
+    width: 60px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ccc;
+    font-weight: bold;      
+}
+
+table {
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ccc;
+}
+
+#backFromGame, #backFromDesc {
+    color: white;
+    background-color: rgb(78, 79, 103);
+    border-bottom: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 120px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 3px solid rgb(191, 200, 177);
+    border-radius: 10px;
+}
+
+
+#descriptionID {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#descriptionID > h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#descriptionID p img {
+    max-width: 838px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#descriptionID table img {
+    width: 148px;
+    height: 148px;
+    max-width: 148px;
+
+}
+
+#descriptionID > table {
+    border: none;
+    text-align: left;
+}
+
+
+#descriptionID table td {
+    border: none;
+    width: 240px;
+    height: 50px;
+    padding-left: 10px
+}
+
+#descriptionID table tr {
+    height: 15px
+
+}
+
+h3 {
+    color: rgb(219, 196, 142);
+    font-size: 150%;
+    border: 0;
+    width: 100%;
+    margin: 10px;
+    text-shadow: -1px 0 rgb(173, 146, 85), 0 1px rgb(173, 146, 85), 1px 0 rgb(173, 146, 85), 0 -1px rgb(173, 146, 85)
+}

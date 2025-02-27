@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railways</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mainMenu">
+        <span><h1>RAILWAYS</h1></span>
+        <input type="text" placeholder="ADD MEG A NEVED!" id="playerName">
+        <div id="mainMenuLevel2">
+            <div id="diffBox">
+                <span>ÁLLÍTSD BE A NEHÉZSÉGET!</span><br><br>
+                <div id="mapSizes">
+                    <div id="diffFive">
+                        <button id="fiveBut">5 X 5</button><br>
+                        <label>KÖNNYŰ</label>
+                    </div>
+                    <div id="diffSeven">
+                        <button id="sevenBut">7 X 7</button><br>
+                        <label>NEHÉZ</label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="otherButtons">
+                <button id="descBut">LEÍRÁS</button>
+                <button id="startBut">JÁTÉK INDÍTÁSA</button>
+            </div>
+        </div>
+    </div>
+    <div id="gamePage">
+        <div class="wrap">
+            <div id="leftSide">
+                <span><h2>RAILWAYS</h2></span>
+                <div class="reapinfo">
+                    <span class="gameTextsFix">ÚTVONALTERVEZŐ:</span>
+                    <span class="gameTextsChange" id="playerN"></span>
+                    <div class="horizontal_line"></div>
+                    <span class="gameTextsFix">ELTELT IDŐ:</span>
+                    <span class="gameTextsChange" id="time"></span>
+                    </div>
+                    <div id="gameEnd">
+                        <h3>Gratulálunk! Teljesítetted a pályát!</h3>
+                        <div id="toplistEasyorHard"></div>
+                        <div id="scores"></div>
+                        <button id="backFromGame">Vissza</button>
+                </div>
+            </div>
+
+            <div id="gameTable"></div>
+        </div>
+    </div>
+    <div id="descriptionID"><h1 id="a-kir-lys-g-vas-th-l-zata">A királyság vasúthálózata</h1>
+        <p>Nekeresdországban Nevenincs király szeretne egy körvasutat építeni, amely bejárja a birodalmának minden szegletét. A feladat megvalósítása Furfangra, az udvari tanácsosra vár, akinek a munkáját nehezíti a királyság változatos tája. Segítsünk Furfangnak megtervezni a királyság vasúthálózatához tartozó térképet!</p>
+        <p><img src="/resources/description/thumbnail.png" alt="thumbnail.png" ></p><h2 id="a-j-t-k-le-r-sa">A játék leírása</h2>
+        <h3 id="r-vid-ttekint-s">Rövid áttekintés</h3>
+        <p>A játék különböző méretű négyzetrácsos hálón játszódhat, ahol a célunk az, hogy egy összefüggő körvasútvonalat alkossunk úgy, hogy minden olyan helyre eljusson a vonat, ahova lehetséges.</p>
+        <p><img src="/resources/description/solution.png" alt="solution.png"></p>
+        <p>A térképen több különböző típusú mező található, melyek a játék kezdetén látszódnak a térképen:</p>
+        <table >
+        <thead>
+        <tr >
+        <th ><img src="/resources/empty.png" alt="empty.png" ></th>
+        <th ><img src="/resources/bridge.png" alt="bridge.png"></th>
+        <th ><img src="/resources/mountain.png" alt="mountain.png"></th>
+        <th ><img src="/resources/oasis.png" alt="oasis.png"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr >
+        <td >Üres mező</td>
+        <td >Híd mező</td>
+        <td >Hegy mező</td>
+        <td >Oázis mező</td>
+        </tr>
+        <tr >
+        <td >Ebben a cellában a vasútvonal a belépési irányon kívül maradék három irányba tud haladni.</td>
+        <td >Ezen a mezőn a vasútvonalat csak a híd által megadott egyenes írányban lehet megépíteni.</td>
+        <td >Ezeken a mezőkön a sziklák a cellának két szomszédos kijáratát lezárják, így csak 90°-ban elfordulva lehet továbbhaladni.</td>
+        <td >Erre a cellára nem lehet vasutat építeni.</td>
+        </tr>
+        </tbody>
+        </table>
+        <p>Mivel szeretnénk a vasúthálózat alapanyagán spórolni, így a vasúthálózat sehol nem keresztezheti önmagát, sehol nem ágazhat el, és nem haladhat át többször egy cellán!</p>
+        <h3 id="men-">Menü</h3>
+        <p>Az oldal betöltésekor megjelenik a főmenü, ahol a játék indításakor a következő paramétereket kell megadni a játék indításához:</p>
+        <ul>
+        <li>Név (játékos neve)</li>
+        <li>Pálya nehézsége (Könnyű, Nehéz)</li>
+        </ul>
+        <p>A játékot csak ezután lehet elindítani. </p>
+        <p><img src="/resources/description/menu_screen.png" alt="menu_screen.png"></p>
+        <p><img src="/resources/description/menu_screen_with_name.png" alt="menu_screen_with_name.png"></p>
+        <h3 id="a-j-t-k-kiindul-si-llapota">A játék kiindulási állapota</h3>
+        <p>A térkép alapja a szinttől függően egy 5x5-ös (Könnyű), 7x7-es (Nehéz), négyzetrács. Mindkét szinten 5 előre meghatározott pálya közül sorsol egyet a program.</p>
+        <p>A játéktéren kívül megjelennek a következő elemek is:</p>
+        <ul>
+        <li>Játékos neve</li>
+        <li>A feladvány elindítása óta eltelt idő</li>
+        </ul>
+        <p><img src="/resources/description/playscreen.png" alt="playscreen.png"></p>
+        <h3 id="vas-telemek-lehelyez-se">Vasútelemek lehelyezése</h3>
+        <p>A vasútelemek lehelyezéséshez kattintsunk az egér bal gombjával egy mezőre. A kattintások hatására ciklikusan változnak az elemek, attól függően, hogy milyen terepobjektum található a mezőn</p>
+        <ul>
+        <li>híd: nincs sín > sín > ... (a mező meghatározza a sín irányát);</li>
+        <li>hegy: nincs sín > sín > ... (a mező meghatározza a sín irányát);</li>
+        <li>sivatag/üres:  nincs sín > NyK sín > ÉD sín > ÉK sín > DK sín > DNy sín > ÉNy sín > ... (É: észak; K: kelet; D: dél; Ny: nyugat);</li>
+        <li>oázis: nem lehetséges sínt lehelyezni;</li>
+        </ul>
+        <h3 id="a-j-t-k-v-ge">A játék vége</h3>
+        <p>A játéknak akkor van vége, amikor a játékos a megadott szabályokat betartva elkészíti a feladvány helyes megoldását. A játék során a feladvány teljesítésének ellenőrzése során a következő elemekre kell odafigyelni:</p>
+        <ul>
+        <li>Minden cellából két irányba lehet menni, és azokba a cellákba amelybe továbbhalad, a megfelelő irányból be lehet érkezni.</li>
+        <li>Minden olyan mezőt, amit érinteni kell, érintünk</li>
+        <li>Minden olyan mezőt, amire nem lehet építeni, üresen maradt.</li>
+        </ul>
+        <button id="backFromDesc">VISSZA</button>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
