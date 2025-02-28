@@ -20,7 +20,7 @@ Besides the player can get more information about the game, if the "LEÍRÁS" bu
 
 During the game a timer is showing the elapsed time.
 
-By clicking the rectangles of the 2D grid a possible railway placement is appered.
+By clicking the rectangles of the 2D grid a possible railway placement is appeared.
 
 ![image](https://github.com/user-attachments/assets/5534008b-fe13-4a0b-bf4a-c01fb94547cd)
 
