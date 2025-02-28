@@ -1,7 +1,7 @@
 # Railways
 
 ## About this project
-This project implements "pipe-like" game using HTML, CSS and JavaScript.
+This project implements "pipe-puzzle" game using HTML, CSS and JavaScript.
 The user can play this game in Google Chrome browser.
 
 ## Details of the game
